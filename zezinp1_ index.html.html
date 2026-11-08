@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zezin - Perfil</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: radial-gradient(circle, #202020, #080808 70%);
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+        .perfil {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .foto {
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #444;
+            box-shadow: 0 0 35px #ffffff18;
+        }
+
+        .nome {
+            font-size: 38px;
+            letter-spacing: 3px;
+            margin: 22px 0 5px;
+        }
+
+        .apelido {
+            color: #999;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .pais {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background: #191919;
+            border: 1px solid #333;
+            border-radius: 30px;
+            padding: 10px 17px;
+            color: #ddd;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        .redes {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .rede {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 18px;
+            background: linear-gradient(120deg, #242424, #151515);
+            border: 1px solid #383838;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .rede:hover {
+            background: #333;
+            transform: translateY(-3px);
+            border-color: #777;
+        }
+
+        .visualizacoes {
+            color: #777;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 15px;
+        }
+
+        footer {
+            color: #555;
+            font-size: 10px;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 500px) {
+            .nome {
+                font-size: 31px;
+            }
+
+            .foto {
+                width: 125px;
+                height: 125px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="perfil">
+
+        <!-- FOTO -->
+        <img src="c:\Users\Breno\Pictures\Saved Pictures\b6237604a26e8c948fa4f850b07fa08c.png"
+             alt="Foto do Zezin"
+             class="foto">
+
+        <!-- NOME -->
+        <h1 class="nome">𝐳𝐞𝐳𝐧</h1>
+
+        <p class="apelido">"𝗦𝗲𝗷𝗮 𝘀𝘂𝗮 𝗽𝗿𝗼́𝗽𝗿𝗶𝗮 𝗿𝗲𝗳𝗲𝗿𝗲̂𝗻𝗰𝗶𝗮".</p>
+
+        <!-- PAÍS / ÍCONE -->
+        <div class="pais">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1klEQVR4nO3WPQrCQBCG4VfEynN4AXsvIJ4gheQAghcQdjvv4GXsBVtvYCuWQoTYKATxZye78Yd8D0yVZWY/yISAiIiIiIiISOt1gDGwAnbAESgbKl+Z6x88PwFZnRAjYNvgxUtDiFtNrSFmQPFjIbw1xKtmqcsFznUpQ2yAHBgAfWvjiLk+ZbMl0E18+Y+H8HcfgHXk/nxlJ1zl3Bw4/+NOuMBzCkHDId69wwdgAvSsQ1PvRB4ZYlgjgGVusOz632INsY8I8WxuASwieoqIiIiIiEirXQDfM1PAfVAVMgAAAABJRU5ErkJggg==" alt="formula-1">
+        </div>
+
+        <!-- REDES SOCIAIS -->
+        <div class="redes">
+
+            <a class="rede"
+               href="https://www.twitch.tv/zezinp1_"
+               target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAiElEQVR4nO2UsRGAIBAEzyYsxNrM+Z7oxgLswegdU+bxT3gCHW+GBLhdIAD4YmYAOwDtHGYmADkArjXB6m0gUu0vAI6Rgo25IpFqn3lDNdbKuV+AdwuYDBXISIF4/R6BFN3ECCyZEJ+cCWcE0gP3BELArz238QDaevKn0tQKYwQpEl4KwuEhOQFdXMxhOBtTVAAAAABJRU5ErkJggg==" alt="twitch">
+                Twitch
+            </a>
+
+            <a class="rede"
+               href="https://www.youtube.com/@zezinp1_"
+               target="_blank"
+               rel="noopener noreferrer">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAy0lEQVR4nO2USwrCMBBAnwt3XsCLeBMvYMXPyvN4DA+grRtPYcDudNNSxV39UEghFDoJbegqD2bTTOaRzDQQCAzFCNgCCaCAFMh05MDPiNxYS3V+DGx0nVaWjUJdI5IkZ0+SWJIoYWMJfB0lV0nyEDbegBlwcZDcJcnbIkE3da6b3Zb7QqB0kNRMgINwtb1OUjEF9sCny0lsPRkDO6Do0xNpup6WdefpSob4TyJPkoUkqcZzDZz01Sjjfcoahczvde4RWNnerkAAb/wBWcLaplKVnJQAAAAASUVORK5CYII=" alt="youtube-play">
+                Youtube
+            </a>
+
+        </div>
+
+        <!-- BLESSED FORA DA CAIXA -->
+        <div class="visualizacoes">
+            𝐛𝐥𝐞𝐬𝐬𝐞𝐝
+        </div>
+
+     
+    </main>
+
+</body>
+</html>
